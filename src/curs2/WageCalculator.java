@@ -7,14 +7,20 @@ public class WageCalculator {
 	public static void main(String[] args) {
 
 		
-		Tester tester1 =  new Tester("Ion", 20);
+		Tester tester1 =  new Tester("Ion", 20, 33);
 		//tester1.setNume("Ion");
 		//tester1.nume = "Marian";	
-		Tester tester2 =  new Tester("Maria", 10);
+		Tester tester2 =  new Tester("Maria", 10, 44);
 		//tester2.setNume("Maria");
 	
-		Tester tester3 = new Tester("Oana", 12);
+		Tester tester3 = new Tester("Oana", 12, 25);
 		
+		
+		//tema curs2
+		System.out.println(tester1.getNume() + " are : " + tester1.getAge() + " ani!");
+		System.out.println(tester2.getNume() + " are : " + tester2.getAge() + " ani!");
+		System.out.println(tester3.getNume() + " are : " + tester3.getAge() + " ani!");
+		//tema curs2
 		
 		System.out.println(tester1.getNume().length());
 		
