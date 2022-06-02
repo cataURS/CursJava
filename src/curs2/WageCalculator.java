@@ -2,19 +2,17 @@ package curs2;
 
 public class WageCalculator {
 	
-	int HoursWorked = 40;
+	int hoursWorked = 40;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		
-		//salarii 2 testeri
-		Tester tester1 = new Tester("Ion", 20);
+		Tester tester1 =  new Tester("Ion", 20);
 		//tester1.setNume("Ion");
-		//tester1.nume = "Ion";
-		
-		Tester tester2 = new Tester("Maria", 10);
+		//tester1.nume = "Marian";	
+		Tester tester2 =  new Tester("Maria", 10);
 		//tester2.setNume("Maria");
-		
+	
 		Tester tester3 = new Tester("Oana", 12);
 		
 		
@@ -24,16 +22,29 @@ public class WageCalculator {
 		
 		System.out.println(tester3.getNume().length());
 		
+		
 		WageCalculator calc = new WageCalculator();
 		
-		System.out.println("Salariul lui" + tester1.getNume() + " este: " + 
+		System.out.println("Salariul lui " + tester1.getNume() + " este : " + 
 		calc.calculateSalary(tester1.getRatePerHour()));
 		
-		//OOP -> polimorfism, abstraction, inheritance, encapsulation
-
+		
+		System.out.println("1");//String
+		System.out.println(2);//int
+		System.out.println('3');//char
+		
+		
+		
+		
+			
 	}
-
+	
 	public int calculateSalary(int rateHourly) {
-		return rateHourly * HoursWorked;
+		
+		return rateHourly * hoursWorked;
+		
+		
 	}
+	
+
 }
