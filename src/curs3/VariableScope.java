@@ -3,7 +3,7 @@ package curs3;
 public class VariableScope {
 	
 	//variabila de instanta
-	public String prenume;
+	public static String prenume;
 	
 	public static String prenume2;
 
