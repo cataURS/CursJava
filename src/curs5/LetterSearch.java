@@ -21,6 +21,7 @@ public class LetterSearch {
 		Scanner scan = new Scanner(System.in);
 		String text = scan.next().toUpperCase();
 		char letter = 'A';
+		scan.next().
 		scan.close();
 		//text.toUpperCase(); //String.EqualsIngoreCase();
 		
