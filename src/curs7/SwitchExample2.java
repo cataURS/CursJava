@@ -4,46 +4,47 @@ import java.util.Scanner;
 
 public class SwitchExample2 {
 
+	/*
+	 * Facem un program care verifica daca un student are dreptul la bursa de studii
+	 * Conditiile sunt:
+	 * Sa fie anul 3
+	 * Sa aiba un punctaj  80 pentru bursa 1
+	 * sa aiba un punctaj  50 pentru bursa 2
+	 * 
+	 */
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		/*
-		 * facem un program care verifica....
-		 * 
-		 */
-		
-		System.out.println("Te rog indrodu ce an esti: ");
-		Scanner scan = new Scanner(System.in);
+		System.out.println("Te rog introdu ce an esti :");
+		Scanner scan  = new Scanner(System.in);
 		int an = scan.nextInt();
-		System.out.println("Te rog indrodu punctajul: ");
-		int punctaj = scan.nextInt();
+		int punctaj;// = scan.nextInt();
 		
 		switch(an) {
 		
-		case 1 :
-		case 2 :
-			System.out.println("Nu esti eligibil pt bursa!");
+		case 1:
+		case 2:
+			System.out.println("Nu esti eligibil pentru bursa!");
 			break;
-		case 3 :
+		case 3:
+			System.out.println("Te rog introdu punctajul :");
+			punctaj = scan.nextInt();
 			switch(punctaj) {
-			
-			case 50 :
-				System.out.println("Esti eligibil pt Bursa 2");
-				break;
-			
-			case 80 :
-				System.out.println("Esti eligibil pt Bursa 1");
-				break;
-				
-			default:
-				System.out.println("Introdu o valoare valida!");
-				
+				case 50:
+					System.out.println("Esti eligibil penru bursa 2");
+					break;
+				case 80:
+					System.out.println("Esti elgibil pentru bursa 1");
+					break;
+				default:
+					System.out.println("Te rog introdu doar o valoare valida!");
 			}
-			break;
+		break;
 		default:
-			System.out.println("Nu esti eligibil pt bursa!");
-			
+			System.out.println("Te rog introdu un an valid!");
 		}
+		
 
 	}
 
