@@ -45,7 +45,7 @@ public class PasswordValidator {
 	}
 	
 	public void checkPasswordRules(String pass) {
-		//valid =  true;
+		valid =  true;
 		
 		if(pass.length() <10) {
 			valid = false;
