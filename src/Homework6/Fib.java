@@ -25,18 +25,22 @@ public class Fib {
 	
 	//merge si nu prea inteleg de ce :))
 	public void FibWhile() {
-		
-		int count = 0;
-				
-		while(nr<9) {
-			fib[count] = a+b;
-			a = b;
-			b = fib[count];
-			count++;
-			
-		}
-		System.out.println("WHILE:Seria Fibonacci pt " + nr + " numere: " + Arrays.toString(fib));
-		
+		   int a = 0;
+		   int b = 1;
+		   int count = 0;
+
+		   System.out.println("\nWHILE:Seria Fibonacci pt " + nr + " numere: " );
+		   while(count<9) {
+		      System.out.print( a + " " );
+
+		      // fib[count] = a+b;
+		      int sum =  a + b;
+		      a = b;
+		      //b = fib[count];
+		      b = sum;
+		      count++;
+		      
+		   }
 	}
 
 	public static void main(String[] args) {
