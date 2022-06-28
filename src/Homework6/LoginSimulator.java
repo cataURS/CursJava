@@ -14,7 +14,7 @@ public class LoginSimulator {
 	
 	public String EnterUser() {
 		System.out.println("Please enter username: ");
-		entered_user = scan.nextLine();
+		entered_user = scan.next();
 		return entered_user;
 	}
 	
@@ -30,9 +30,7 @@ public class LoginSimulator {
 		if(!entered_user.equals(username)) {
 			valid = false;
 			System.out.println("Login error!");
-		}
-		
-		if(entered_pass != pass) {
+		}else if(entered_pass != pass) {
 			valid = false;
 			System.out.println("Login error!");
 			
