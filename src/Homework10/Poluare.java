@@ -13,8 +13,8 @@ public class Poluare {
 		verificaMotorizare(bici);
 		
 		//de proba :)
-		//Vehicul vehi = new Vehicul();
-		//verificaMotorizare(vehi);
+		Vehicul vehi = new Vehicul();
+		verificaMotorizare(vehi);
 
 	}
 	

@@ -24,7 +24,7 @@ public class Bicicleta extends Vehicul{
 	
 	@Override
 	public void detaliiVehicul() {
-		System.out.println("Nivelul de poluare pentru bicicleta Pegas este :0 si "
+		System.out.println("Nivelul de poluare pentru b este: 0 si "
 				+ " viteza medie atinsa este de 15 km/h");
 	}
 	

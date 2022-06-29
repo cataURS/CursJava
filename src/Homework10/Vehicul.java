@@ -45,8 +45,15 @@ public class Vehicul {
 	}
 	
 	public void detaliiVehicul() {
-		System.out.println("Nivelul de poluare pentru masina Dacia este :5 si "
+		System.out.println("Nivelul de poluare pentru masina Dacia este: 5 si "
 				+ " viteza medie atinsa este de 180 km/h");
+		
+		
+		//o sa presupun ca varianta de sus e corecta si asa ai intentionat pt ca varianta de mai
+		//jos aici va returna 0 si null iar in override nu avem cum sa accesam valorile 
+		
+		//System.out.println("Nivelul de poluare pentru masina " + brand + " este: " +  nivelPoluare + " si "
+		//		+ " viteza medie atinsa este de " + vitezaMedie);
 	}
 	
 	

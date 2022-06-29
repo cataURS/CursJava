@@ -24,7 +24,7 @@ public class Masina extends Vehicul{
 	
 	@Override
 	public void detaliiVehicul() {
-		System.out.println("Nivelul de poluare pentru masina Golf este :9000 si "
+		System.out.println("Nivelul de poluare pentru masina Golf este: 9000 si "
 				+ " viteza medie atinsa este de 200 km/h");
 	}
 	
