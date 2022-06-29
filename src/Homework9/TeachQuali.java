@@ -7,14 +7,8 @@ public class TeachQuali {
 		
 		Qualification teach = new Qualification();
 	
-		System.out.println(teach.course);
-		System.out.println(teach.expYears);
-		System.out.println(teach.schedule);
-		
 		teach.Check();
 		
-		
-
 	}
 
 }

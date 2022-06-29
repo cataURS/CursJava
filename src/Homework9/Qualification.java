@@ -21,11 +21,8 @@ public class Qualification extends Teacher {
 	
 	
 	public void Check() {
-		System.out.println(course);
-		System.out.println(expYears);
-		System.out.println(schedule);
 		
-		if (course == "Java" && expYears >= 3 && schedule == "Afternoon") {
+		if (course.contentEquals("Java") && expYears >= 3 && schedule.contentEquals("Afternoon")) {
 			
 			System.out.println("You qualify to teach at this school!");
 		} else {
