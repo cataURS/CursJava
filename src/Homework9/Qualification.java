@@ -22,7 +22,7 @@ public class Qualification extends Teacher {
 	
 	public void Check() {
 		
-		if (course.contentEquals("Java") && expYears >= 3 && schedule.contentEquals("Afternoon")) {
+		if (course.Equals("Java") && expYears >= 3 && schedule.contentEquals("Afternoon")) {
 			
 			System.out.println("You qualify to teach at this school!");
 		} else {
