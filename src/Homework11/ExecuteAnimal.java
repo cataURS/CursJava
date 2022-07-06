@@ -7,22 +7,22 @@ public class ExecuteAnimal {
 		
 		System.out.println("Primate DataType instance of Human:");
 		System.out.println("-------------------------------------");
-		Human om = new Human();
+		Primate om = new Human("Can walk", "Can run", "I can speak!", "I need to sleep!", "beer");
 		om.walk();
 		om.run();
-		System.out.println(om.eat());
+		System.out.println(((Human) om).eat());
 		om.speak();
-		om.sleep();
+		((Human) om).sleep();
 		
 		System.out.println();
 		System.out.println("Primate DataType instance of Monkey:");
 		System.out.println("-------------------------------------");
-		Monkey chimp = new Monkey();
+		Primate chimp = new Monkey("can walk", "can run", "cannot speak", "I need to sleep!", "water");
 		chimp.walk();
 		chimp.run();
-		chimp.sleep();
-		System.out.println(chimp.eat());
-		om.speak();
+		((Monkey) chimp).sleep();
+		System.out.println(((Monkey) chimp).eat());
+		chimp.speak();
 
 	}
 

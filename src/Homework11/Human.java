@@ -1,37 +1,29 @@
 package Homework11;
 
 public class Human extends Primate implements BasicNeeds {
+	
+	String sleep;
+	String drink;
 
-	@Override
+	public Human(String walk, String run, String speak, String sleep, String drink) {
+		super(walk, run, speak);
+		this.sleep = sleep;
+		this.drink = drink;
+		// TODO Auto-generated constructor stub
+	}
+
 	public String eat() {
-		String food = "Omnivore";
-		return food;
+		return "Omnivore";
 	}
 
 	@Override
 	public void sleep() {
-		System.out.println("I need to sleep!");
+		System.out.println(sleep);
 	}
 
 	@Override
 	public void drink() {
-		// TODO Auto-generated method stub
+		System.out.println(drink);
+	}
 		
 	}
-	
-	public void walk() {
-		System.out.println("Can walk");
-	}
-	
-	
-	public void run() {
-		System.out.println("Can run");
-	}
-	
-	public void speak() {
-		System.out.println("I can speak!");
-	}
-
-	
-
-}

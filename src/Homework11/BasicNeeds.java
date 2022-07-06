@@ -2,7 +2,9 @@ package Homework11;
 
 public interface BasicNeeds {
 
-	public String eat();
+	public default String eat() {
+		return "food";
+	}
 	void sleep();
 	void drink();
 	
