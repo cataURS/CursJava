@@ -4,7 +4,7 @@ public abstract class Account {
 	
 	private int accountNumber;
 	double balance;
-	Customer accountOwner;
+	public Customer accountOwner;
 	
 	public Account(int accountNumber, double balance, Customer accountOwner) {
 		this.accountNumber = accountNumber;
@@ -12,9 +12,8 @@ public abstract class Account {
 		this.accountOwner = accountOwner;
 	}
 	
-	abstract Withdraw(double balance) {
-		try
-	}
+	public abstract void Withdraw(double balance) throws InsufficientFundsException;
+		
 	
 
 }
